@@ -1,0 +1,214 @@
+@font-face {
+    font-family: poppins;
+    src: url('/assets/images_and_fonts/Poppins-Regular.ttf');
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    color: white;
+    background-color: #191924;
+    font-family: poppins, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#parentContainer {
+    width: 1200px;
+}
+
+#headerSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    padding-right: 25px;
+    padding-left: 25px;
+    font-weight: bold;
+}
+
+#headerLeftSide {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+#headerRightSide {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+#logoContainer {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5px;
+}
+
+#logo {
+    width: 32px;
+    height: 32px;
+}
+
+#heading {
+    font-weight: bolder;
+}
+
+#homeSection {
+    min-height: 700px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+#homeLeftSide {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+#homeIntro1 {
+    font-size: 4.5rem;
+    font-weight: bolder;
+}
+
+#homeIntro2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#homeIntro3 {
+    color: rgba(242, 243, 244, 0.584);
+    line-height: 32px;
+    font-size: 1.3rem;
+}
+
+#resumeButton {
+    width: 300px;
+    height: 60px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    background-image: linear-gradient(to left, rgb(132, 0, 255), rgb(230, 0, 255));
+    box-shadow: 0 0 20px 10px rgb(31, 38, 52);
+    margin-top: 25px;
+    transition: 0.2s ease-in-out;
+}
+
+#resumeButton:hover {
+    cursor: pointer;
+    width: 320px;
+    height: 70px;
+    margin-top: 15px;
+    box-shadow: 0 0 30px 15px rgb((31), 38, 52);
+}
+
+#homeRightSide {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#initials {
+    border-radius: 50%;
+    border: 2px solid rgb(133, 76, 230);
+    height: 400px;
+    width: 400px;
+}
+
+#skillSection {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    min-height: 700px;
+    justify-content: center;
+    align-items: center;
+}
+
+#skillIntro1 {
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+#skillIntro2 {
+    color: rgba(242, 243, 244, 0.584);
+    font-size: 1.2rem;
+    max-width: 600px;
+    text-align: center;
+}
+
+#skillContainer {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.skillCard {
+    border: 0.1px solid rgb(133, 76, 230);
+    box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
+    padding: 15px 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+}
+
+.skillCardHeading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgba(242, 243, 244, 0.5);
+}
+
+.skillsList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.skill {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    padding: 12px 16px;
+    color: rgba(242, 243, 244, 0.5);
+    border: 1px solid rgba(242, 243, 244, 0.5);
+}
+
+.skillIcon {
+    width: 30px;
+    height: 30px;
+}
