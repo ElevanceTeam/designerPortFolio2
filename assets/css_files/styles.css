@@ -141,6 +141,7 @@ html, body {
     min-height: 700px;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
 }
 
 #skillIntro1 {
@@ -211,4 +212,123 @@ html, body {
 .skillIcon {
     width: 30px;
     height: 30px;
+}
+
+#experienceSection {
+    min-height: 700px;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
+#experienceIntro1 {
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+#experienceIntro2 {
+    color: rgba(242, 243, 244, 0.584);
+    font-size: 1.2rem;
+    max-width: 600px;
+    text-align: center;
+}
+
+.experienceContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px;
+    max-width: 710px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.experienceLeftSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    min-height: 100%;
+}
+
+.emptyCircle {
+    padding: 4px;
+    border: 2px solid rgb(156, 39, 176);
+    border-radius: 50%;
+}
+
+.straightLine {
+    width: 2px;
+    background: rgb(133, 76, 230);
+    display: flex;
+    flex: 1;
+    min-height: 100%;
+}
+
+.experienceCard {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+    border: 0.1px solid rgb(48, 110, 232);
+    border-radius: 15px;
+    box-shadow: rgb(23, 92, 230, 0.15) 0px 4px 24px;
+}
+
+.experienceCardBox1 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.experienceImage {
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+}
+
+.designation {
+    font-size: 1.1rem;
+    font-weight: bolder;
+    color: rgba(242, 243, 244, 0.6);
+}
+
+.organization {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: rgba(242, 243, 244, 0.584);
+}
+
+.timePeriod {
+    font-size: 0.8rem;
+    color: rgba(242, 243, 244, 0.584);
+}
+
+.experienceCardBox2 {
+    font-size: 1rem;
+    color: rgba(242, 243, 244, 0.584);
+}
+
+.experienceCardBox3 {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    color: rgba(242, 243, 244, 0.584);
+    margin-bottom: 10px;
+}
+
+.experienceCardBox3Skills {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+li::before {
+    content: "";
+    margin-left: -0.5rem;
 }
