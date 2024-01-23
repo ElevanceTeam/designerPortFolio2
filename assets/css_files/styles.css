@@ -1,334 +1,707 @@
 @font-face {
-    font-family: poppins;
-    src: url('/assets/images_and_fonts/Poppins-Regular.ttf');
+  font-family: poppins;
+  src: url("/assets/images_and_fonts/Poppins-Regular.ttf");
 }
 
-html, body {
-    padding: 0;
-    margin: 0;
-    color: white;
-    background-color: #191924;
-    font-family: poppins, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+html,
+body {
+  padding: 0;
+  margin: 0;
+  color: white;
+  background-color: #191924;
+  font-family: poppins, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #parentContainer {
-    width: 1200px;
+  width: 1200px;
 }
 
 #headerSection {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 20px;
-    padding-right: 25px;
-    padding-left: 25px;
-    font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  padding-right: 25px;
+  padding-left: 25px;
+  font-weight: bold;
 }
 
 #headerLeftSide {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
 #headerRightSide {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
 }
 
 #logoContainer {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2.5px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5px;
 }
 
 #logo {
-    width: 32px;
-    height: 32px;
+  width: 32px;
+  height: 32px;
 }
 
 #heading {
-    font-weight: bolder;
+  font-weight: bolder;
 }
 
 #homeSection {
-    min-height: 700px;
-    margin-top: 25px;
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
-    justify-content: center;
-    align-items: center;
+  min-height: 700px;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
 }
 
 #homeLeftSide {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
 }
 
 #homeIntro1 {
-    font-size: 4.5rem;
-    font-weight: bolder;
+  font-size: 4.5rem;
+  font-weight: bolder;
 }
 
 #homeIntro2 {
-    font-size: 2rem;
-    font-weight: bold;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 #homeIntro3 {
-    color: rgba(242, 243, 244, 0.584);
-    line-height: 32px;
-    font-size: 1.3rem;
+  color: rgba(242, 243, 244, 0.584);
+  line-height: 32px;
+  font-size: 1.3rem;
 }
 
 #resumeButton {
-    width: 300px;
-    height: 60px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    border-radius: 25px;
-    border: none;
-    color: white;
-    background-image: linear-gradient(to left, rgb(132, 0, 255), rgb(230, 0, 255));
-    box-shadow: 0 0 20px 10px rgb(31, 38, 52);
-    margin-top: 25px;
-    transition: 0.2s ease-in-out;
+  width: 300px;
+  height: 60px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 25px;
+  border: none;
+  color: white;
+  background-image: linear-gradient(
+    to left,
+    rgb(132, 0, 255),
+    rgb(230, 0, 255)
+  );
+  box-shadow: 0 0 20px 10px rgb(31, 38, 52);
+  margin-top: 25px;
+  transition: 0.2s ease-in-out;
 }
 
 #resumeButton:hover {
-    cursor: pointer;
-    width: 320px;
-    height: 70px;
-    margin-top: 15px;
-    box-shadow: 0 0 30px 15px rgb((31), 38, 52);
+  cursor: pointer;
+  width: 320px;
+  height: 70px;
+  margin-top: 15px;
+  box-shadow: 0 0 30px 15px rgb(31, 38, 52);
 }
 
 #homeRightSide {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #initials {
-    border-radius: 50%;
-    border: 2px solid rgb(133, 76, 230);
-    height: 400px;
-    width: 400px;
+  border-radius: 50%;
+  border: 2px solid rgb(133, 76, 230);
+  height: 400px;
+  width: 400px;
 }
 
 #skillSection {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-    min-height: 700px;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  min-height: 700px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
 }
 
 #skillIntro1 {
-    font-size: 3rem;
-    font-weight: bolder;
+  font-size: 3rem;
+  font-weight: bolder;
 }
 
 #skillIntro2 {
-    color: rgba(242, 243, 244, 0.584);
-    font-size: 1.2rem;
-    max-width: 600px;
-    text-align: center;
+  color: rgba(242, 243, 244, 0.584);
+  font-size: 1.2rem;
+  max-width: 600px;
+  text-align: center;
 }
 
 #skillContainer {
-    width: 100%;
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 50px;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
 }
 
 .skillCard {
-    border: 0.1px solid rgb(133, 76, 230);
-    box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
-    padding: 15px 35px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 25px;
-    width: 100%;
-    max-width: 500px;
-    border-radius: 15px;
+  border: 0.1px solid rgb(133, 76, 230);
+  box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
+  padding: 15px 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 15px;
 }
 
 .skillCardHeading {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: rgba(242, 243, 244, 0.5);
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgba(242, 243, 244, 0.5);
 }
 
 .skillsList {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 25px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
 }
 
 .skill {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 10px;
-    padding: 12px 16px;
-    color: rgba(242, 243, 244, 0.5);
-    border: 1px solid rgba(242, 243, 244, 0.5);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  padding: 12px 16px;
+  color: rgba(242, 243, 244, 0.5);
+  border: 1px solid rgba(242, 243, 244, 0.5);
 }
 
 .skillIcon {
-    width: 30px;
-    height: 30px;
+  width: 30px;
+  height: 30px;
 }
 
 #experienceSection {
-    min-height: 700px;
-    margin-top: 70px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 25px;
-    margin-bottom: 50px;
+  min-height: 700px;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 50px;
 }
 
 #experienceIntro1 {
-    font-size: 3rem;
-    font-weight: bolder;
+  font-size: 3rem;
+  font-weight: bolder;
 }
 
 #experienceIntro2 {
-    color: rgba(242, 243, 244, 0.584);
-    font-size: 1.2rem;
-    max-width: 600px;
-    text-align: center;
+  color: rgba(242, 243, 244, 0.584);
+  font-size: 1.2rem;
+  max-width: 600px;
+  text-align: center;
 }
 
 .experienceContainer {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    padding: 10px;
-    max-width: 710px;
-    justify-content: flex-start;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 10px;
+  max-width: 710px;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .experienceLeftSide {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  min-height: 100%;
 }
 
 .emptyCircle {
-    padding: 4px;
-    border: 2px solid rgb(156, 39, 176);
-    border-radius: 50%;
+  padding: 4px;
+  border: 2px solid rgb(156, 39, 176);
+  border-radius: 50%;
 }
 
 .straightLine {
-    width: 2px;
-    background: rgb(133, 76, 230);
-    display: flex;
-    flex: 1;
-    min-height: 100%;
+  width: 2px;
+  background: rgb(133, 76, 230);
+  display: flex;
+  flex: 1;
+  min-height: 100%;
 }
 
 .experienceCard {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    padding: 15px;
-    border: 0.1px solid rgb(48, 110, 232);
-    border-radius: 15px;
-    box-shadow: rgb(23, 92, 230, 0.15) 0px 4px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 15px;
+  border: 0.1px solid rgb(48, 110, 232);
+  border-radius: 15px;
+  box-shadow: rgb(23, 92, 230, 0.15) 0px 4px 24px;
 }
 
 .experienceCardBox1 {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
 
 .experienceImage {
-    width: 50px;
-    height: 50px;
-    border-radius: 15px;
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
 }
 
 .designation {
-    font-size: 1.1rem;
-    font-weight: bolder;
-    color: rgba(242, 243, 244, 0.6);
+  font-size: 1.1rem;
+  font-weight: bolder;
+  color: rgba(242, 243, 244, 0.6);
 }
 
 .organization {
-    font-size: 0.9rem;
-    font-weight: bold;
-    color: rgba(242, 243, 244, 0.584);
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: rgba(242, 243, 244, 0.584);
 }
 
 .timePeriod {
-    font-size: 0.8rem;
-    color: rgba(242, 243, 244, 0.584);
+  font-size: 0.8rem;
+  color: rgba(242, 243, 244, 0.584);
 }
 
 .experienceCardBox2 {
-    font-size: 1rem;
-    color: rgba(242, 243, 244, 0.584);
+  font-size: 1rem;
+  color: rgba(242, 243, 244, 0.584);
 }
 
 .experienceCardBox3 {
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-    color: rgba(242, 243, 244, 0.584);
-    margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  color: rgba(242, 243, 244, 0.584);
+  margin-bottom: 10px;
 }
 
 .experienceCardBox3Skills {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
 
 li::before {
-    content: "";
-    margin-left: -0.5rem;
+  content: "";
+  margin-left: -0.5rem;
+}
+
+#projectSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  gap: 25px;
+  min-height: 700px;
+  margin-bottom: 50px;
+}
+
+#projectIntro1 {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+#projectIntro2 {
+  color: rgba(242, 243, 244, 0.584);
+  font-size: 1.2rem;
+  max-width: 700px;
+  text-align: center;
+}
+
+#projectTabBox {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.2rem;
+  color: #854ce6;
+  border: 0.1px solid #854ce6;
+  border-radius: 15px;
+  padding: 0px 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectTab {
+  padding: 0.5rem 1rem;
+}
+
+#allProject {
+  border-right: 0.1px solid #854ce6;
+}
+
+#webApplicationProject {
+  border-right: 0.1px solid #854ce6;
+}
+
+#projectContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectCard {
+  padding: 25px;
+  min-height: 420px;
+  max-width: 25%;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  box-shadow: 0 0 16px 2px rgba(0, 0, 0, 0.3);
+  transition: 0.2s ease-in-out;
+}
+
+.projectCard:hover {
+  position: relative;
+  top: -10px;
+  box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+}
+
+.projectImage {
+  width: 100%;
+  height: 150px;
+  border-radius: 15px;
+  box-shadow: 0 0 16px 2px rgba(0, 0, 0, 0.3);
+}
+
+.skillUsed {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.projectSkill {
+  padding: 2px 8px;
+  border-radius: 10px;
+  background-color: rgba(133, 76, 230, 0.082);
+  color: rgb(133, 76, 230);
+  font-size: 0.8rem;
+}
+
+.projectCardHeading {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.projectCardTimePeriod {
+  font-size: 0.8rem;
+  color: rgba(242, 243, 244, 0.584);
+}
+
+.projectCardIntro2 {
+  color: rgba(242, 243, 244, 0.584);
+}
+
+#educationSection {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 100px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+#educationIntro1 {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+#educationIntro2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  max-width: 620px;
+  text-align: center;
+  color: rgba(242, 243, 244, 0.586);
+}
+
+#educationContainerSpace {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.educationContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 10px;
+  max-width: 710px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.educationCard {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 15px;
+  border: 0.1px solid rgb(133, 76, 230);
+  border-radius: 15px;
+  box-shadow: rgb(23, 92, 230, 0.15) 0px 4px 24px;
+}
+
+.educationCardBox1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.educationImage {
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+}
+
+.institute {
+  font-size: bolder;
+  font-size: 1.1rem;
+  color: rgba(242, 243, 244, 0.586);
+}
+
+.qualification {
+  font-size: 0.9rem;
+  font-size: bold;
+  color: rgba(242, 243, 244, 0.584);
+}
+
+.educationCardBox2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 5px;
+  color: rgba(242, 243, 244, 0.584);
+}
+
+.educationCardBox3 {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  color: rgba(242, 243, 244, 0.584);
+  margin-bottom: 10px;
+}
+
+#contactSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+#contactIntro1 {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+#contactIntro2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  max-width: 620px;
+  text-align: center;
+  color: rgba(242, 243, 244, 0.586);
+}
+
+#contactContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 32px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 550px;
+  border-radius: 15px;
+  background-color: rgb(23, 23, 33);
+  box-shadow: 0px 4px 24px rgba(23, 92, 230, 0.15);
+}
+
+#contactBox1 {
+  font-size: 1.4rem;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+
+#contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.contactInput {
+  padding: 12px 16px;
+  border-radius: 15px;
+  background-color: transparent;
+  border: 1px solid rgb(177, 178, 179);
+  font-size: 1.1rem;
+  font-family: inherit;
+  color: white;
+}
+
+#contactTextarea {
+  padding: 12px 16px;
+  border-radius: 15px;
+  background-color: transparent;
+  border: 1px solid rgb(177, 178, 179);
+  font-size: 1.1rem;
+  font-family: inherit;
+  min-height: 100px;
+  color: white;
+}
+
+#contactButton {
+  min-height: 50px;
+  font-size: 1.1rem;
+  text-align: center;
+  background: linear-gradient(
+    225deg,
+    rgb(132, 0, 255) 0%,
+    rgb(230, 0, 255) 100%
+  );
+  border: none;
+  border-radius: 15px;
+  color: white;
+  font-weight: bolder;
+  margin-top: 5px;
+  transition: 0.2s ease-in-out;
+}
+
+#contactButton:hover {
+  cursor: pointer;
+  height: 60px;
+  margin-top: 5px;
+  box-shadow: 0 0 30px 15px rgb(31, 38, 52);
+}
+
+#statsSection {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  min-height: 400px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#statsIntro1 {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+#statsIntro2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: rgba(242, 243, 244, 0.584);
+  max-width: 600px;
+  text-align: center;
+}
+
+#footerSection {
+  margin-top: 80px;
+  margin-bottom: 20px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+}
+
+#footerIntro1 {
+  color: rgb(133, 76, 230);
+  font-weight: bolder;
+  font-size: 1.2rem;
+}
+
+#footerIntro2 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+#footerIntro3 {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialsLink {
+  width: 25px;
+  height: 25px;
+}
+
+#footerIntro4 {
+  margin-top: 10px;
+  font-size: 0.9rem;
 }
