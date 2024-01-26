@@ -27,6 +27,10 @@ body {
   padding-right: 25px;
   padding-left: 25px;
   font-weight: bold;
+  position: fixed;
+  width: inherit;
+  background-color: #191924;
+  z-index: 1;
 }
 
 #headerLeftSide {
@@ -43,6 +47,14 @@ body {
   gap: 30px;
   justify-content: center;
   align-items: center;
+}
+
+.headerLinks {
+  transition: 0.2s ease-in-out;
+}
+
+.headerLinks:hover {
+  color: rgb(133, 76, 230);
 }
 
 #logoContainer {
@@ -67,7 +79,7 @@ body {
 
 #homeSection {
   min-height: 700px;
-  margin-top: 25px;
+  padding-top: 80px;
   display: flex;
   flex-direction: row;
   gap: 50px;
@@ -91,6 +103,24 @@ body {
 #homeIntro2 {
   font-size: 2rem;
   font-weight: bold;
+}
+
+.typewriter {
+  color: rgb(132, 76, 230);
+  padding-right: 2px;
+  border-right: 4px solid rgb(132, 76, 230);
+  overflow: hidden;
+  animation: 
+    typing 0.5s steps(18),
+    cursor1 0.5s step-end infinite alternate;
+}
+
+@keyframes cursor1 {
+  50% {border-color: transparent;}
+}
+
+@keyframes typing {
+  from {width: 0;}
 }
 
 #homeIntro3 {
@@ -146,7 +176,7 @@ body {
   min-height: 700px;
   justify-content: center;
   align-items: center;
-  margin-top: 80px;
+  padding-top: 80px;
 }
 
 #skillIntro1 {
@@ -221,7 +251,7 @@ body {
 
 #experienceSection {
   min-height: 700px;
-  margin-top: 80px;
+  padding-top: 80px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -285,6 +315,12 @@ body {
   box-shadow: rgb(23, 92, 230, 0.15) 0px 4px 24px;
 }
 
+.experienceCard:hover {
+  position: relative;
+  top: -10px;
+  box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+}
+
 .experienceCardBox1 {
   display: flex;
   flex-direction: row;
@@ -346,7 +382,7 @@ li::before {
   margin-top: 100px;
   gap: 25px;
   min-height: 700px;
-  margin-bottom: 50px;
+  padding-top: 80px;
 }
 
 #projectIntro1 {
@@ -453,7 +489,7 @@ li::before {
   display: flex;
   flex-direction: column;
   gap: 25px;
-  margin-top: 100px;
+  padding-top: 80px;
   justify-content: center;
   align-items: center;
   margin-bottom: 50px;
@@ -497,6 +533,12 @@ li::before {
   border: 0.1px solid rgb(133, 76, 230);
   border-radius: 15px;
   box-shadow: rgb(23, 92, 230, 0.15) 0px 4px 24px;
+}
+
+.educationCard:hover {
+  position: relative;
+  top: -10px;
+  box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
 }
 
 .educationCardBox1 {
@@ -548,7 +590,7 @@ li::before {
   justify-content: center;
   align-items: center;
   gap: 25px;
-  margin-top: 100px;
+  padding-top: 80px;
   margin-bottom: 50px;
 }
 
@@ -640,7 +682,7 @@ li::before {
   display: flex;
   flex-direction: column;
   gap: 25px;
-  margin-top: 100px;
+  padding-top: 80px;
   margin-bottom: 50px;
   min-height: 400px;
   justify-content: flex-start;
